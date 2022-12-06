@@ -1,0 +1,24 @@
+
+<app-navbar></app-navbar>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">AlbumId</th>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">URL</th>
+        <th scope="col">ThumbnailURL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of photos">
+        <th scope="row">{{i.albumId}}</th>
+        <td>{{i.id}}</td>
+        <td>{{i.title}}</td>
+        <td><img src="{{i.url}}" alt="" class="src" height="150px"></td>
+        <td><img src="{{i.thumbnailUrl}}" alt="" class="src" height="150px"></td>
+      </tr>
+     
+    </tbody>
+  </table>
